@@ -26,11 +26,22 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+  	• While React helps with a myriad of difficulties, the two I keep circling back to are
+    		a. Reusability - in no small part because that is hammered home every lesson ٩(^‿^)۶
+
+        b. Projects of scale. This is one I frequently occurs to me because of my previous experience with front end web development. My clients are all small businesses, which naturally limits the size and scope of the projects. Even so, I found myself needing to learn about splitting files and bundling.
+
 - [ ] What does it mean to _think_ in react?
+
+    • I go back to my previous experience again. When I am developing a static site, I design it with two things in mind: style organization and the visual end result. With React comes dynamic pages. So the first thing we want to consider is the _architecture_ of the app. Where a component is within the page must factor in because of how state and props are passed among parents and children.
 
 - [ ] Describe state.
 
+The heart: the driver of the application. While props are immutable, changing state with setState will trigger a re-rending, thus giving an opportunity to pass in new data
+
 - [ ] Describe props.
+
+The blood: the data: the properties. An encapsulation of data that can pass from parent to child(and so forth)
 
 ## Project Set Up
 
@@ -43,15 +54,15 @@ Follow these steps to set up and work on your project:
 - [ ] Change directories into `./starwars` (`cd starwars`) and run `yarn install` to retrieve all needed dependencies.
 - [ ] Once you have installed the _node_modules_, run `yarn start or` to get your server up and running.
 - [ ] With the server up and running, open Chrome and head over to `localhost:3000` and view your beautiful app. Maybe it's not _that_ pretty... _yet_, your goal is to ensure this project becomes a thing of beauty.
-Follow these steps for completing your project.
+      Follow these steps for completing your project.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo).
 - [ ] Add your Project Manager as a Reviewer on the Pull-request.
-- [ ] PM then will count the HW as done by  merging the branch back into master.
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 Please note:
 
@@ -84,7 +95,6 @@ Your data set will look like this:
 
 ![Star Wars state data](starwars_data.png)
 
-
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
@@ -100,7 +110,6 @@ Required best practices:
 - [ ] Consistent quotation usage.
 - [ ] Spell-check.
 - [ ] Schedule time to review, refine and reassess your work.
-
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 

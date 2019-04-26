@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import StarwarsCharList from "./components/StarwarsCharList";
+import Character from "./components/Character";
+import "./App.css";
 
 class App extends Component {
   constructor() {
@@ -10,7 +12,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.getCharacters('https://swapi.co/api/people/');
+    this.getCharacters("https://swapi.co/api/people/");
   }
 
   getCharacters = URL => {
@@ -32,7 +34,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="Header">React Wars</h1>
+        <h1 className="Header is-size-1">React Wars</h1>
+        <div className="container is-fluid">
+        <StarwarsCharList characters={this.state.starwarsChars} />
+        </div>
       </div>
     );
   }
