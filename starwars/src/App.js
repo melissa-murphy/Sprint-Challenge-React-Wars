@@ -36,7 +36,9 @@ class App extends Component {
       <div className="App">
         <h1 className="Header is-size-1">React Wars</h1>
         <div className="container is-fluid">
-        <StarwarsCharList characters={this.state.starwarsChars} />
+          <StarwarsCharList characters={this.state.starwarsChars}>
+            <Character />
+          </StarwarsCharList>
         </div>
       </div>
     );
